@@ -10,8 +10,9 @@
         }
 
         table {
-            width: 400px;
+            width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -19,9 +20,27 @@
             padding: 8px;
         }
 
+        caption{
+           font-size: 1.2em;
+           font-weight: bold;
+           padding: 10px;
+           background-color: lightgray;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+
+        }
+
         thead, tfoot {
-            background-color: gray;
+            background-color: #383838;
             color: white;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
         }
 
         td.num {
@@ -37,6 +56,7 @@
     <!--
         ANATOMIOA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD, TH
             TBODY
@@ -46,9 +66,12 @@
     -->
 
     <table>
+        <caption>
+            População das unidades federativas do Brasil
+        </caption>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col">População</th>
         </thead>
         <tbody>
             <tr>
@@ -56,21 +79,127 @@
                 <td class="num">41.919.049 </td>
             </tr>
              <tr>
-                <td>Minas GErais</td>
+                <td>Minas Gerais</td>
                 <td class="num">21.168.791</td>
              </tr>
              <tr>
                 <td>Rio de Janeiro</td>
                 <td class="num">17.264.943</td>
              </tr>
+             <tr>
+                <td>Bahia</td>
+                <td class="num">14.136.417</td>
+             </tr>
+             <tr>
+                <td>parana</td>
+                <td class="num">11.443.208</td>
+             </tr>
+             <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">10.880.506</td>
+             </tr>
+             <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.058.155</td>
+             </tr>
+             <tr>
+                <td>Ceara</td>
+                <td class="num">8.791.588</td>
+             </tr>
+             <tr>
+                <td>Para</td>
+                <td class="num">8.116.132</td>
+             </tr>
+             <tr>
+                <td>Santa Catarina</td>
+                <td class="num">7.609.601</td>
+             </tr>
+             <tr>
+                <td>Goias</td>
+                <td class="num">7.055.228</td>
+             </tr>
+             <tr>
+                <td>Maranhão</td>
+                <td class="num">6.75.152</td>
+             </tr>
+             <tr>
+                <td>Paraiba</td>
+                <td class="num">3.974.495</td>
+             </tr>
+             <tr>
+                <td>Amazonas</td>
+                <td class="num">3.941.175</td>
+             </tr>
+             <tr>
+                <td>Espirito Santo</td>
+                <td class="num">3.833.485</td>
+             </tr>
+             <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3.658.813</td>
+             </tr>
+             <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3.302.406</td>
+             </tr>
+             <tr>
+                <td>Piaui</td>
+                <td class="num">3.269.200</td>
+             </tr>
+             <tr>
+                <td>Alagoas</td>
+                <td class="num">3.127.511</td>
+             </tr>
+             <tr>
+                <td>Distrito Federal</td>
+                <td class="num">2.817.068</td>
+             </tr>
+             <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2.756.700</td>
+             </tr>
+             <tr>
+                <td>Sergipe</td>
+                <td class="num">2.209.558</td>
+             </tr>
+             <tr>
+                <td>Rondonia</td>
+                <td class="num">1.581.016</td>
+             </tr>
+             <tr>
+                <td>Tocantins</td>
+                <td class="num">1.511.459</td>
+             </tr>
+             <tr>
+                <td>Acre</td>
+                <td class="num">830.026</td>
+             </tr>
+             <tr>
+                <td>Amapa</td>
+                <td class="num">733.508</td>
+             </tr>
+             <tr>
+                <td>Roraima</td>
+                <td class="num">636.303</td>
+             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td><strong>79.000.000</strong></td>
             </tr>
         </tfoot>
     </table>
-    
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia ipsa est, iusto porro assumenda aut nobis sequi sunt quod adipisci dolor consequatur explicabo minima, libero impedit vel. Qui, modi deleniti! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit sequi deserunt illum aspernatur ducimus dolores labore eveniet quis optio! Unde rerum nulla deleniti nam aliquid. Officiis repellat nobis error accusamus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus eaque, molestias necessitatibus et consectetur eligendi! Ex ipsam doloribus optio quae, voluptas veniam placeat sed praesentium dolorum eveniet quasi velit quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sint omnis tempora minima, reiciendis veritatis vero, ab molestiae eos quasi aliquam ipsam illo laudantium voluptas animi, atque eum modi fugit!</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia ipsa est, iusto porro assumenda aut nobis sequi sunt quod adipisci dolor consequatur explicabo minima, libero impedit vel. Qui, modi deleniti! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit sequi deserunt illum aspernatur ducimus dolores labore eveniet quis optio! Unde rerum nulla deleniti nam aliquid. Officiis repellat nobis error accusamus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus eaque, molestias necessitatibus et consectetur eligendi! Ex ipsam doloribus optio quae, voluptas veniam placeat sed praesentium dolorum eveniet quasi velit quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sint omnis tempora minima, reiciendis veritatis vero, ab molestiae eos quasi aliquam ipsam illo laudantium voluptas animi, atque eum modi fugit!</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia ipsa est, iusto porro assumenda aut nobis sequi sunt quod adipisci dolor consequatur explicabo minima, libero impedit vel. Qui, modi deleniti! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit sequi deserunt illum aspernatur ducimus dolores labore eveniet quis optio! Unde rerum nulla deleniti nam aliquid. Officiis repellat nobis error accusamus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus eaque, molestias necessitatibus et consectetur eligendi! Ex ipsam doloribus optio quae, voluptas veniam placeat sed praesentium dolorum eveniet quasi velit quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sint omnis tempora minima, reiciendis veritatis vero, ab molestiae eos quasi aliquam ipsam illo laudantium voluptas animi, atque eum modi fugit!</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia ipsa est, iusto porro assumenda aut nobis sequi sunt quod adipisci dolor consequatur explicabo minima, libero impedit vel. Qui, modi deleniti! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit sequi deserunt illum aspernatur ducimus dolores labore eveniet quis optio! Unde rerum nulla deleniti nam aliquid. Officiis repellat nobis error accusamus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus eaque, molestias necessitatibus et consectetur eligendi! Ex ipsam doloribus optio quae, voluptas veniam placeat sed praesentium dolorum eveniet quasi velit quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sint omnis tempora minima, reiciendis veritatis vero, ab molestiae eos quasi aliquam ipsam illo laudantium voluptas animi, atque eum modi fugit!</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia ipsa est, iusto porro assumenda aut nobis sequi sunt quod adipisci dolor consequatur explicabo minima, libero impedit vel. Qui, modi deleniti! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit sequi deserunt illum aspernatur ducimus dolores labore eveniet quis optio! Unde rerum nulla deleniti nam aliquid. Officiis repellat nobis error accusamus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus eaque, molestias necessitatibus et consectetur eligendi! Ex ipsam doloribus optio quae, voluptas veniam placeat sed praesentium dolorum eveniet quasi velit quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sint omnis tempora minima, reiciendis veritatis vero, ab molestiae eos quasi aliquam ipsam illo laudantium voluptas animi, atque eum modi fugit!</p>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia ipsa est, iusto porro assumenda aut nobis sequi sunt quod adipisci dolor consequatur explicabo minima, libero impedit vel. Qui, modi deleniti! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit sequi deserunt illum aspernatur ducimus dolores labore eveniet quis optio! Unde rerum nulla deleniti nam aliquid. Officiis repellat nobis error accusamus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus eaque, molestias necessitatibus et consectetur eligendi! Ex ipsam doloribus optio quae, voluptas veniam placeat sed praesentium dolorum eveniet quasi velit quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus sint omnis tempora minima, reiciendis veritatis vero, ab molestiae eos quasi aliquam ipsam illo laudantium voluptas animi, atque eum modi fugit!</p>
 </body>
 </html>
